@@ -1,9 +1,25 @@
+:root{
+    --red:#C73B0F;
+    --rose-900:#260F08;
+    --rose-500:#87635A;
+    --rose-400:#AD8A85;
+    --rose-300:#FCF8F6;
+    --rose-100:#F5EEEC;
+    --green:#1EA575;
+    --white:#FFFFFF;
+
+    --regular:400;
+    --medium:500;
+    --semiBold:600;
+    --bold:700;
+
+}   
 *{
     box-sizing: border-box;
 }
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Red Hat Text", serif;
 }
 img{
     display: block;
@@ -18,4 +34,91 @@ ul{
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+.header{
+    padding: 144px 0 26px 10px;
+}
+.title{
+    font-size: 40px;
+    font-weight: var(--bold);
+    line-height: 120%;
+}
+.options{
+    display: flex;
+    width: 268px;
+    height: 34px;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: auto;
+    font-weight: var(--semiBold);
+}
+.btn-nav , .btn-addToCard{
+    width: 77px;
+    height: 100%;
+    border: 1px solid var(--rose-400);
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    padding: 0 24px 28px 24px;
+}
+.img-btn{
+    position: relative;
+    margin-bottom: 38px;
+}
+.picture{
+    width:100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.btn-addToCard{
+    position: absolute;
+    width: 160px;
+    height: 44px;
+    background-color: var(--white);
+    top: 190px;
+    left: calc(50% - 80px);
+}
+.icon-card{
+    margin-right: 8px;
+}
+.info-card{
+    width: 100%;
+    height: 69px;
+}
+.info-card p{
+    margin: 0;
+    margin-bottom: 4px;
+}
+.product-type{
+    color: var(--rose-500);
+}
+.name-product,.price{
+    color: var(--rose-900);
+    font-size: 16px;
+    font-weight: var(--semiBold);
+    line-height: auto;
+}
+.price{
+    color: var(--red);
+}
+.product{
+    margin-bottom: 24px;
+}
+.btn-added{
+    background-color: #C73B0F;
+    justify-content: space-around;
+    color: var(--white);
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
