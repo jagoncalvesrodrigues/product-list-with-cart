@@ -21,7 +21,7 @@
     <section>
     <main class="main">
         <section class="products">
-            <div class="product">
+            <div class="product" id="product">
                 <div class="img-btn">
                     <div class="picture">
                         <picture>
@@ -31,16 +31,20 @@
                             <img src="./assets/img/image-waffle-mobile.jpg" alt="">
                         </picture>
                     </div>
-                    <div class="btn-addToCard btn-added">
-                        <div class="circle">
-                            <img src="./assets/img/icon-decrement-quantity.svg" alt="">
-                        </div>
-                        <p>1</p>
-                        <div class="circle">
-                            <img src="./assets/img/icon-increment-quantity.svg" alt="">
-                        </div>
-                            <!-- <img class="icon-card" src="./assets/img/icon-add-to-cart.svg" alt="">
-                            <p>Add to Cart</p> -->
+                    <div>
+                        <button id="btn-incr-decr" class="btn-addToCard btn-added" data-name="Waffle wiht Berries" data-price="6.50">
+                            <div class="circle">
+                                <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                            </div>
+                            <p>1</p>
+                            <div class="circle">
+                                <img src="./assets/img/icon-increment-quantity.svg" alt="">
+                            </div>
+                        </button>
+                        <button id="btn-addToCard"  class="btn-addToCard" data-name="Waffle wiht Berries" data-price="6.50" data-type="add">
+                            <img class="icon-card" src="./assets/img/icon-add-to-cart.svg" alt="">
+                            <p class="text-addcart">Add to Cart</p>
+                        </button>
                     </div>
                 </div>
                 <div class="info-card">
@@ -49,7 +53,7 @@
                     <p class="price">$6.50</p>
                 </div>
             </div> 
-            <div class="product">
+            <div class="product" id="product">
                 <div class="img-btn">
                     <div class="picture">
                         <picture>
@@ -59,14 +63,20 @@
                             <img src="./assets/img/image-creme-brulee-desktop-mobile.jpg" alt="">
                         </picture>
                     </div>
-                    <div class="btn-addToCard">
-                        <!-- <span>
-                            <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                    <div>
+                        <button id="btn-incr-decr" class="btn-addToCard btn-added" data-name="Vanilla Bean Crème Brûlée" data-price="7.00">
+                            <div class="circle">
+                                <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                            </div>
                             <p>1</p>
-                            <img src="./assets/img/icon-increment-quantity.svg" alt="">
-                        </span> -->
+                            <div class="circle">
+                                <img src="./assets/img/icon-increment-quantity.svg" alt="">
+                            </div>
+                        </button>
+                        <button id="btn-addToCard"  class="btn-addToCard" data-name="Vanilla Bean Crème Brûlée" data-price="7.00" data-type="add">
                             <img class="icon-card" src="./assets/img/icon-add-to-cart.svg" alt="">
-                            <p>Add to Cart</p>
+                            <p class="text-addcart">Add to Cart</p>
+                        </button>
                     </div>
                 </div>
                 <div class="info-card">
@@ -75,7 +85,7 @@
                     <p class="price">$7.00</p>
                 </div>
             </div> 
-            <div class="product">
+            <div class="product" id="product">
                 <div class="img-btn">
                     <div class="picture">
                         <picture>
@@ -85,14 +95,20 @@
                             <img src="./assets/img/image-macaron-mobile.jpg" alt="">
                         </picture>
                     </div>
-                    <div class="btn-addToCard">
-                        <!-- <span>
-                            <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                    <div>
+                        <button id="btn-incr-decr" class="btn-addToCard btn-added" data-name="Macaron Mix of Five" data-price="8.00">
+                            <div class="circle">
+                                <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                            </div>
                             <p>1</p>
-                            <img src="./assets/img/icon-increment-quantity.svg" alt="">
-                        </span> -->
+                            <div class="circle">
+                                <img src="./assets/img/icon-increment-quantity.svg" alt="">
+                            </div>
+                        </button>
+                        <button id="btn-addToCard"  class="btn-addToCard" data-name="Macaron Mix of Five" data-price="8.00" data-type="add">
                             <img class="icon-card" src="./assets/img/icon-add-to-cart.svg" alt="">
-                            <p>Add to Cart</p>
+                            <p class="text-addcart">Add to Cart</p>
+                        </button>
                     </div>
                 </div>
                 <div class="info-card">
@@ -101,7 +117,7 @@
                     <p class="price">$8.00</p>
                 </div>
             </div> 
-            <div class="product">
+            <div class="product" id="product">
                 <div class="img-btn">
                     <div class="picture">
                         <picture>
@@ -111,14 +127,20 @@
                             <img src="./assets/img/image-tiramisu-mobile.jpg" alt="">
                         </picture>
                     </div>
-                    <div class="btn-addToCard">
-                        <!-- <span>
-                            <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                    <div>
+                        <button id="btn-incr-decr" class="btn-addToCard btn-added" data-name="Classic Tiramisu" data-price="5.50">
+                            <div class="circle">
+                                <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                            </div>
                             <p>1</p>
-                            <img src="./assets/img/icon-increment-quantity.svg" alt="">
-                        </span> -->
+                            <div class="circle">
+                                <img src="./assets/img/icon-increment-quantity.svg" alt="">
+                            </div>
+                        </button>
+                        <button id="btn-addToCard"  class="btn-addToCard" data-name="Classic Tiramisu" data-price="5.50" data-type="add">
                             <img class="icon-card" src="./assets/img/icon-add-to-cart.svg" alt="">
-                            <p>Add to Cart</p>
+                            <p class="text-addcart">Add to Cart</p>
+                        </button>
                     </div>
                 </div>
                 <div class="info-card">
@@ -127,7 +149,7 @@
                     <p class="price">$5.50</p>
                 </div>
             </div> 
-            <div class="product">
+            <div class="product" id="product">
                 <div class="img-btn">
                     <div class="picture">
                         <picture>
@@ -137,14 +159,20 @@
                             <img src="./assets/img/image-baklava-mobile.jpg" alt="">
                         </picture>
                     </div>
-                    <div class="btn-addToCard">
-                        <!-- <span>
-                            <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                    <div>
+                        <button id="btn-incr-decr" class="btn-addToCard btn-added" data-name="Pistachio Baklava" data-price="4.00">
+                            <div class="circle">
+                                <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                            </div>
                             <p>1</p>
-                            <img src="./assets/img/icon-increment-quantity.svg" alt="">
-                        </span> -->
+                            <div class="circle">
+                                <img src="./assets/img/icon-increment-quantity.svg" alt="">
+                            </div>
+                        </button>
+                        <button id="btn-addToCard"  class="btn-addToCard" data-name="Pistachio Baklava" data-price="4.00" data-type="add">
                             <img class="icon-card" src="./assets/img/icon-add-to-cart.svg" alt="">
-                            <p>Add to Cart</p>
+                            <p class="text-addcart">Add to Cart</p>
+                        </button>
                     </div>
                 </div>
                 <div class="info-card">
@@ -153,7 +181,7 @@
                     <p class="price">$4.00</p>
                 </div>
             </div> 
-            <div class="product">
+            <div class="product" id="product">
                 <div class="img-btn">
                     <div class="picture">
                         <picture>
@@ -163,14 +191,20 @@
                             <img src="./assets/img/image-meringue-mobile.jpg" alt="">
                         </picture>
                     </div>
-                    <div class="btn-addToCard">
-                        <!-- <span>
-                            <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                    <div>
+                        <button id="btn-incr-decr" class="btn-addToCard btn-added" data-name="Lemon Meringue Pie" data-price="5.00">
+                            <div class="circle">
+                                <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                            </div>
                             <p>1</p>
-                            <img src="./assets/img/icon-increment-quantity.svg" alt="">
-                        </span> -->
+                            <div class="circle">
+                                <img src="./assets/img/icon-increment-quantity.svg" alt="">
+                            </div>
+                        </button>
+                        <button id="btn-addToCard"  class="btn-addToCard" data-name="Lemon Meringue Pie" data-price="5.00" data-type="add">
                             <img class="icon-card" src="./assets/img/icon-add-to-cart.svg" alt="">
-                            <p>Add to Cart</p>
+                            <p class="text-addcart">Add to Cart</p>
+                        </button>
                     </div>
                 </div>
                 <div class="info-card">
@@ -179,7 +213,7 @@
                     <p class="price">$5.00</p>
                 </div>
             </div> 
-            <div class="product">
+            <div class="product" id="product">
                 <div class="img-btn">
                     <div class="picture">
                         <picture>
@@ -189,14 +223,20 @@
                             <img src="./assets/img/image-cake-mobile.jpg" alt="">
                         </picture>
                     </div>
-                    <div class="btn-addToCard">
-                        <!-- <span>
-                            <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                    <div>
+                        <button id="btn-incr-decr" class="btn-addToCard btn-added" data-name="Red Velvet Cake" data-price="4.50">
+                            <div class="circle">
+                                <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                            </div>
                             <p>1</p>
-                            <img src="./assets/img/icon-increment-quantity.svg" alt="">
-                        </span> -->
+                            <div class="circle">
+                                <img src="./assets/img/icon-increment-quantity.svg" alt="">
+                            </div>
+                        </button>
+                        <button id="btn-addToCard"  class="btn-addToCard" data-name="Red Velvet Cake" data-price="4.50" data-type="add">
                             <img class="icon-card" src="./assets/img/icon-add-to-cart.svg" alt="">
-                            <p>Add to Cart</p>
+                            <p class="text-addcart">Add to Cart</p>
+                        </button>
                     </div>
                 </div>
                 <div class="info-card">
@@ -205,7 +245,7 @@
                     <p class="price">$4.50</p>
                 </div>
             </div> 
-            <div class="product">
+            <div class="product" id="product">
                 <div class="img-btn">
                     <div class="picture">
                         <picture>
@@ -215,14 +255,20 @@
                             <img src="./assets/img/image-brownie-mobile.jpg" alt="">
                         </picture>
                     </div>
-                    <div class="btn-addToCard">
-                        <!-- <span>
-                            <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                    <div>
+                        <button id="btn-incr-decr" class="btn-addToCard btn-added" data-name="Salted Caramel Brownie" data-price="5.50">
+                            <div class="circle">
+                                <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                            </div>
                             <p>1</p>
-                            <img src="./assets/img/icon-increment-quantity.svg" alt="">
-                        </span> -->
+                            <div class="circle">
+                                <img src="./assets/img/icon-increment-quantity.svg" alt="">
+                            </div>
+                        </button>
+                        <button id="btn-addToCard"  class="btn-addToCard" data-name="Salted Caramel Brownie" data-price="5.50" data-type="add">
                             <img class="icon-card" src="./assets/img/icon-add-to-cart.svg" alt="">
-                            <p>Add to Cart</p>
+                            <p class="text-addcart">Add to Cart</p>
+                        </button>
                     </div>
                 </div>
                 <div class="info-card">
@@ -231,7 +277,7 @@
                     <p class="price">$5.50</p>
                 </div>
             </div> 
-            <div class="product">
+            <div class="product" id="product">
                 <div class="img-btn">
                     <div class="picture">
                         <picture>
@@ -241,14 +287,20 @@
                             <img src="./assets/img/image-panna-cotta-mobile.jpg" alt="">
                         </picture>
                     </div>
-                    <div class="btn-addToCard">
-                        <!-- <span>
-                            <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                    <div>
+                        <button id="btn-incr-decr" class="btn-addToCard btn-added" data-name="Vanilla Panna Cotta" data-price="6.50">
+                            <div class="circle">
+                                <img src="./assets/img/icon-decrement-quantity.svg" alt="">
+                            </div>
                             <p>1</p>
-                            <img src="./assets/img/icon-increment-quantity.svg" alt="">
-                        </span> -->
+                            <div class="circle">
+                                <img src="./assets/img/icon-increment-quantity.svg" alt="">
+                            </div>
+                        </button>
+                        <button id="btn-addToCard"  class="btn-addToCard" data-name="Vanilla Panna Cotta" data-price="6.50" data-type="add">
                             <img class="icon-card" src="./assets/img/icon-add-to-cart.svg" alt="">
-                            <p>Add to Cart</p>
+                            <p class="text-addcart">Add to Cart</p>
+                        </button>
                     </div> 
                 </div>
                 <div class="info-card">
@@ -258,6 +310,63 @@
                 </div>
             </div> 
         </section>
+        <section class="cart">
+            <h2 class="cart-title">Your Cart <span>(4)</span></h2>
+            <div>
+                <div class="box-product-card">
+                    <div class="item">
+                        <p class="product-name">Classic Tiramisu</p>
+                        <div class="price-item-card">
+                            <p class="quantity">1x</p>
+                            <p class="real-price">@$5.50</p>
+                            <p class="total">$5.50</p>
+                        </div>
+                    </div>
+                    <div class="remove-item">
+                        <img src="./assets/img/icon-remove-item.svg" alt="">
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="box-product-card">
+                    <div class="item">
+                        <p class="product-name">Classic Tiramisu</p>
+                        <div class="price-item-card">
+                            <p class="quantity">1x</p>
+                            <p class="real-price">@$5.50</p>
+                            <p class="total">$5.50</p>
+                        </div>
+                    </div>
+                    <div class="remove-item">
+                        <img src="./assets/img/icon-remove-item.svg" alt="">
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="box-product-card">
+                    <div class="item">
+                        <p class="product-name">Classic Tiramisu</p>
+                        <div class="price-item-card">
+                            <p class="quantity">1x</p>
+                            <p class="real-price">@$5.50</p>
+                            <p class="total">$5.50</p>
+                        </div>
+                    </div>
+                    <div class="remove-item">
+                        <img src="./assets/img/icon-remove-item.svg" alt="">
+                    </div>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="total-order">
+                <p>Order Total</p>
+                <p class="total-global">$<span>46.50</span></p>
+            </div>
+            <div class="carbon-neutral">
+                <img src="./assets/img/icon-carbon-neutral.svg" alt="">
+                <p class="text-carbon-neutral">This is a <span class="carbon-neutral-bold">carbon-neutral</span> delivery</p>
+            </div>
+            <button class="confirm-order">Confirm Order</button>
+        </section>
     </main>
+    <script src="./src/script.js"></script>
 </body>
 </html>

@@ -20,6 +20,7 @@
 body{
     margin: 0;
     font-family: "Red Hat Text", serif;
+    background-color: #FCF8F6;
 }
 img{
     display: block;
@@ -38,6 +39,11 @@ ul{
 .header{
     padding: 144px 0 26px 10px;
 }
+@media screen and (width>=768px){
+    .header{
+        padding: 104px 0 32px 37px;
+    }
+}
 .title{
     font-size: 40px;
     font-weight: var(--bold);
@@ -52,6 +58,11 @@ ul{
     line-height: auto;
     font-weight: var(--semiBold);
 }
+@media screen and (width>=768px){
+    .options{
+        margin-left: 3px;
+    }
+}
 .btn-nav , .btn-addToCard{
     width: 77px;
     height: 100%;
@@ -63,6 +74,18 @@ ul{
 }
 .main{
     padding: 0 24px 28px 24px;
+}
+@media screen and (width>=768px){
+    .main{
+        padding: 0 40px 20px 40px;
+    }
+}
+@media screen and (width>=1440px){
+    .main{
+        display: grid;
+        grid-template-columns: 2, 3fr, 1fr;
+        gap: 32px;
+    }
 }
 .img-btn{
     position: relative;
@@ -79,11 +102,19 @@ ul{
     width: 160px;
     height: 44px;
     background-color: var(--white);
-    top: 190px;
+    bottom: -20px;
     left: calc(50% - 80px);
 }
 .icon-card{
     margin-right: 8px;
+    pointer-events: none;
+}
+.text-addcart{
+    color: var(--rose-900);
+    font-size: 13px;
+    font-weight: var(--semiBold);
+    line-height: auto;
+    pointer-events: none;
 }
 .info-card{
     width: 100%;
@@ -108,10 +139,23 @@ ul{
 .product{
     margin-bottom: 24px;
 }
+@media screen and (width>=1440px){
+    .product{
+        min-width:250px;
+    }
+}
 .btn-added{
     background-color: #C73B0F;
     justify-content: space-around;
     color: var(--white);
+}
+.flex-row-buttom{
+    display: flex;
+    background-color: transparent;
+    justify-content: space-around;
+    border-style: none;
+    color: var(--white);
+    width: 77px;
 }
 .circle{
     width: 20px;
@@ -122,3 +166,131 @@ ul{
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (width>=768px){
+    .products{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+}
+@media screen and (width>=1440px){
+    .products{
+        grid-column: 1/3;
+    }
+}
+.disappear{
+    display: none;
+}
+.cart{
+    padding: 24px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 12px;
+}
+@media screen and (width>=1440px){
+    .cart{
+        min-width: 384px;
+        grid-column: 3/4;
+    }
+}
+.cart-title{
+    color: var(--red);
+    font-size: 24px;
+    font-weight: var(--bold);
+    list-style: auto;
+    margin-bottom: 24px;
+}
+.box-product-card{
+    width: 100%;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+.price-item-card{
+    display: flex;
+    justify-content: space-between;
+}
+.item p{
+    margin: 0;
+}
+.quantity{
+    color: var(--red);
+}
+.real-price{
+    color: var(--rose-400);
+    font-weight: var(--regular);
+}
+.total{
+    color: var(--rose-500);
+}
+.remove-item{
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--rose-400);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item{
+    width: 125px;
+    font-size: 14px;
+    line-height: auto;
+    font-weight: var(--semiBold);
+    color: var(--rose-900);
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    border: 1px solid var(--rose-100);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.total-order{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: var(--regular);
+    line-height: auto;
+    align-items: center;
+}
+.total-global{
+    font-size: 24px;
+    font-weight: var(--bold);
+    line-height: auto;
+}
+.carbon-neutral{
+    background-color: #FCF8F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.text-carbon-neutral{
+    font-size: 14px;
+    font-weight: var(--regular);
+    line-height: auto;
+    margin-left: 8px;
+}
+.carbon-neutral-bold{
+    font-weight: var(--semiBold);
+}
+.confirm-order{
+    border-style: none;
+    background-color: var(--red);
+    width: 100%;
+    height: 53px;
+    color: white;
+    border-radius: 999px;
+    font-weight: var(--semiBold);
+    font-size: 16px;
+    line-height: auto;
+}
+
