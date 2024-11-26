@@ -5,26 +5,6 @@ const textTotalAmountElement = document.getElementById('total-order');
 
 let cartElements =[];
 
-const mainListenner = (event) => {
-    console.log(event.target.dataset.type)
-    const type = event.target.dataset.type;
-    //si es distinto de type no devuelve nada
-    if (!type) return;
-    if(type==='add'){
-        identifierInsertElement(event);
-        return;
-    }
-    if (type === 'increment') {
-        incrementQuantity(event);
-    }else if (type === 'decrement') {
-        decrementQuantity(event);
-    }
-    //borramos lo que hay dentro para volver a pintarlo
-    cartItemsElement.innerHTML="";
-    printContent(cartElements);
-    totalAmount(cartElements);
-};
-
 const identifierInsertElement = event =>{
     //hago desaparecer el boton
     event.target.nextElementSibling.classList.remove('disappear');
@@ -33,11 +13,11 @@ const identifierInsertElement = event =>{
         price:event.target.dataset.price,
         quantity:1
     }
+    printContent();
     console.log(cartItem);
     cartElements.push(cartItem);
     return(cartElements);
 }
-
 //incrementar cantidad del producto
 
 const incrementQuantity = event =>{
@@ -69,11 +49,35 @@ const decrementQuantity = event =>{
     return cartElements;
 };
 
+const mainListenner = (event) => {
+    console.log(event.target.dataset.type)
+    const type = event.target.dataset.type;
+    //si es distinto de type no devuelve nada
+    if (!type) return;
+    if(type==='add'){
+        identifierInsertElement(event);
+        return;
+    }
+    if (type === 'increment') {
+        incrementQuantity(event);
+    }else if (type === 'decrement') {
+        decrementQuantity(event);
+    }
+
+    //borramos lo que hay dentro para volver a pintarlo
+    cartItemsElement.innerHTML="";
+    printContent();
+    totalAmount();
+};
+
+
+
 
 //total del carrito
 
 const totalAmount = (cartElements)=>{
-    console.log(cartElements.reduce((acc,element) => element.price + acc));
+    const total = cartElements.reduce((acc,element) => (element.price*element.quantity + acc),0);
+    textTotalAmountElement.textContent=total;
 }
 
 //pintar elemento al carrito
