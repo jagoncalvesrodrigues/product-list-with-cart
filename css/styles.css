@@ -157,6 +157,9 @@ ul{
     color: var(--white);
     width: 77px;
 }
+.ignore-img{
+    pointer-events: none;
+}
 .circle{
     width: 20px;
     height: 20px;
@@ -165,6 +168,8 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
+    padding: 4px;
 }
 
 @media screen and (width>=768px){
@@ -235,6 +240,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 3px;
 }
 .item{
     width: 125px;
