@@ -275,8 +275,12 @@
             </div> 
         </section>
         <section class="cart">
-            <h2 class="cart-title">Your Cart <span>(4)</span></h2>
+            <h2 class="cart-title">Your Cart <span id="quantity-products">0</span></h2>
             <div id="cart-items">
+                <div id="emptyCart" class="emptyCart">
+                    <img src="./assets/img/illustration-empty-cart.svg" alt="">
+                    <p>Your added items will appear here</p>
+                </div>
                 <!-- <div class="box-product-card">
                     <div class="item">
                         <p class="product-name">Classic Tiramisu</p>
@@ -315,18 +319,84 @@
                     <div class="remove-item">
                         <img src="./assets/img/icon-remove-item.svg" alt="">
                     </div>
-                </div> -->
-                <div class="line"></div>
+                </div> 
+                <div class="line"></div>-->
             </div>
-            <div class="total-order">
+            <div id="orderTotal" class="total-order disappear">
                 <p>Order Total</p>
                 <p class="total-global" >$<span id='total-order'>0</span></p>
             </div>
-            <div class="carbon-neutral">
+            <div id="carbonNeutral" class="carbon-neutral disappear">
                 <img src="./assets/img/icon-carbon-neutral.svg" alt="">
                 <p class="text-carbon-neutral">This is a <span class="carbon-neutral-bold">carbon-neutral</span> delivery</p>
             </div>
-            <button class="confirm-order">Confirm Order</button>
+            <button id="confirmOrder" class="confirm-order disappear">Confirm Order</button>
+            <div id="modal" class="orderConfirmed disappear">
+                <div class="headerConfirm">
+                    <img class="img-order-confirm" src="./assets/img/icon-order-confirmed.svg" alt=""> 
+                    <div class="titleOrderConfirm">
+                        <p class="titleOrderConfirmed">Order Confirmed</p>
+                        <p class="textOrderConfirmed">We hope you enjoy your food!</p>
+                    </div>
+                </div>
+                <div class="products-confirmed">
+                    <!-- <div id="products-confirmed-items">
+                        <div class="box-product-card">
+                            <div class="imgprice">
+                                <img class="img-confirmed" src="./assets/img/image-baklava-desktop.jpg" alt="">
+                                <div class="item">
+                                    <p class="product-name">Classic Tiramisu</p>
+                                    <div class="price-item-card itemconfirmed">
+                                        <p class="quantity">1x</p>
+                                        <p class="real-price">@$5.50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="total">$5.50</p>
+                            </div>
+                        </div> 
+                        <div class="line"></div>
+                        <div class="box-product-card">
+                            <div class="imgprice">
+                                <img class="img-confirmed" src="./assets/img/image-baklava-desktop.jpg" alt="">
+                                <div class="item">
+                                    <p class="product-name">Classic Tiramisu</p>
+                                    <div class="price-item-card itemconfirmed">
+                                        <p class="quantity">1x</p>
+                                        <p class="real-price">@$5.50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="total">$5.50</p>
+                            </div>
+                        </div> 
+                        <div class="line"></div>
+                        <div class="box-product-card">
+                            <div class="imgprice">
+                                <img class="img-confirmed" src="./assets/img/image-baklava-desktop.jpg" alt="">
+                                <div class="item">
+                                    <p class="product-name">Classic Tiramisu</p>
+                                    <div class="price-item-card itemconfirmed">
+                                        <p class="quantity">1x</p>
+                                        <p class="real-price">@$5.50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="total">$5.50</p>
+                            </div>
+                        </div> 
+                        <div class="line"></div> -->
+                    </div>
+                    <div id="orderTotal" class="total-order total-order-confirm">
+                        <p>Order Total</p>
+                        <p class="total-global" >$<span id='total-order'>0</span></p>
+                    </div>
+                </div>
+                <button id="confirmOrder" class="confirm-order">Start New Order</button>
+            </div>
         </section>
     </main>
     <script src="./src/script.js"></script>
