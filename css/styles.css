@@ -335,6 +335,22 @@ ul {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
+@media screen and (width>=768px) {
+  .orderConfirmed {
+    width: 688px;
+    height: 685px;
+    top: 50%; 
+    left: 50%; 
+    /*Ajusta la posición del elemento moviéndolo hacia atrás por el 50% de su propio tamaño, 
+    tanto en el eje X como en el eje Y, para centrarlo perfectamente. */
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (width>=1440px) {
+  .orderConfirmed {
+    width: 592px;
+  }
+}
 /* .orderConfirmed::before {
   content: "";
   position: fixed;
