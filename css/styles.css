@@ -301,6 +301,17 @@ ul {
   font-size: 16px;
   line-height: auto;
 }
+.confirm-order2 {
+  border-style: none;
+  background-color: var(--red);
+  width: 100%;
+  height: 53px;
+  color: white;
+  border-radius: 999px;
+  font-weight: var(--semiBold);
+  font-size: 16px;
+  line-height: auto;
+}
 .emptyCart {
   display: flex;
   justify-content: center;
@@ -314,6 +325,9 @@ ul {
   height: 717px;
   background-color: var(--white);
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   bottom: 0;
   left: 0;
   z-index: 4;
@@ -321,7 +335,7 @@ ul {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
-.orderConfirmed::before {
+/* .orderConfirmed::before {
   content: "";
   position: fixed;
   background-color: #000000;
@@ -331,7 +345,7 @@ ul {
   top: 0;
   left: 0;
   z-index: -5;
-}
+} */
 
 .products-confirmed {
   width: 100%;

@@ -2,15 +2,15 @@ const productElement = document.getElementById("product");
 const btnaddToCardElement = document.getElementById("btn-addToCard");
 const cartItemsElement = document.getElementById("cart-items");
 const textTotalAmountElement = document.getElementById("total-order");
+const textTotalAmountModalElement = document.getElementById("total-order2");
 const orderTotalBoxElement = document.getElementById("orderTotal");
 const carbonNeutralBoxElement = document.getElementById("carbonNeutral");
 const confirmOrderBtnElement = document.getElementById("confirmOrder");
+const confirmOrderModalBtnElement = document.getElementById("confirmOrder2");
 const emptyCartElement = document.getElementById("emptyCart");
 const quantityProductsElement = document.getElementById("quantity-products");
 const modalElement = document.getElementById("modal");
-const productstemsBoxElement = document.getElementById(
-  "products-confirmed-items"
-);
+const productstemsBoxElement = document.getElementById("cartfinal");
 
 let cartElements = [];
 
@@ -82,25 +82,6 @@ const mainListenner = (event) => {
   totalAmount();
   quantityItems();
 };
-
-//total del carrito
-
-const totalAmount = () => {
-  const total = cartElements.reduce(
-    (acc, element) => element.price * element.quantity + acc,
-    0
-  );
-  textTotalAmountElement.textContent = total;
-};
-
-const quantityItems = () => {
-  const total = cartElements.reduce(
-    (acc, element) => element.quantity + acc,
-    0
-  );
-  quantityProductsElement.textContent = total;
-};
-
 //pintar elemento al carrito
 
 const printContent = () => {
@@ -173,15 +154,47 @@ const printContentConfirmed = () => {
     totalBox.append(totalItem);
     mainBox.append(mainBoxImg, totalBox);
     fragment.append(mainBox, lineSeparation);
-    productstemsBoxElement.append(fragment);
+    productstemsBoxElement.prepend(fragment);
   });
 };
 
 //cambiar al modal
 const confirmOrder = () => {
   modalElement.classList.remove("disappear");
+  totalAmount2();
   printContentConfirmed();
 };
 
+//total del carrito
+
+const totalAmount = () => {
+  const total = cartElements.reduce(
+    (acc, element) => element.price * element.quantity + acc,
+    0
+  );
+  textTotalAmountElement.textContent = total;
+};
+const totalAmount2 = () => {
+  const total = cartElements.reduce(
+    (acc, element) => element.price * element.quantity + acc,
+    0
+  );
+  textTotalAmountModalElement.textContent = total;
+};
+
+const quantityItems = () => {
+  const total = cartElements.reduce(
+    (acc, element) => element.quantity + acc,
+    0
+  );
+  quantityProductsElement.textContent = total;
+};
+
+const closeModal = ()=>{
+  modalElement.classList.add("disappear");
+}
+
+
 productElement.addEventListener("click", mainListenner);
 confirmOrderBtnElement.addEventListener("click", confirmOrder);
+confirmOrderModalBtnElement.addEventListener("click", closeModal);
